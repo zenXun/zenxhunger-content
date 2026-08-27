@@ -5,6 +5,7 @@ pubDate: 2026-03-02
 status: "Flop"
 locale: "en"
 tags: ["Poker", "Texas Hold'em", "Analysis", "Observation"]
+series: "The Million Dollar Path"
 draft: false
 ---
 

@@ -13,6 +13,7 @@ const baseSchema = z.object({
   book_title: z.string().optional(),
   alias: z.array(z.string()).optional(),
   rating: z.number().min(1).max(5).optional(),
+  series: z.string().optional(), // 系列名，同名文章在文章页互相链接
 });
 
 // Studio collection - Learning notes, AI, Tech explorations (was AI)

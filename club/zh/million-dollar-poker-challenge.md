@@ -5,6 +5,7 @@ pubDate: 2026-03-02
 status: "起"
 locale: "zh"
 tags: ["德州扑克", "Poker", "复盘", "观察"]
+series: "百万之路"
 draft: false
 ---
 
