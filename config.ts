@@ -1,11 +1,12 @@
 import { defineCollection, z } from 'astro:content';
+import { tagNames } from './tags';
 
 // Shared schema for all collections
 const baseSchema = z.object({
   title: z.string(),
   pubDate: z.coerce.date(),
   description: z.string(),
-  tags: z.array(z.string()),
+  tags: z.array(z.string()).max(3),
   status: z.enum(['Flop', 'Turn', 'River', '起', '承', '合']).default('Flop'),
   locale: z.enum(['en', 'zh']).optional().default('en'),
   slug: z.string().optional(), // Custom slug for i18n mapping
@@ -14,6 +15,17 @@ const baseSchema = z.object({
   alias: z.array(z.string()).optional(),
   rating: z.number().min(1).max(5).optional(),
   series: z.string().optional(), // 系列名，同名文章在文章页互相链接
+}).superRefine((data, ctx) => {
+  const allowed = tagNames(data.locale);
+  for (const tag of data.tags) {
+    if (!allowed.includes(tag)) {
+      ctx.addIssue({
+        code: z.ZodIssueCode.custom,
+        path: ['tags'],
+        message: `标签「${tag}」不在词表里（src/content/tags.ts）。可用：${allowed.join(' / ')}`,
+      });
+    }
+  }
 });
 
 // Studio collection - Learning notes, AI, Tech explorations (was AI)
