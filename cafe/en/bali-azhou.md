@@ -4,7 +4,7 @@ description: "The detour to the volcano — a seasoned guide's soft upsell, or j
 pubDate: 2026-08-18
 status: "Turn"
 locale: "en"
-tags: ["Travel", "Bali", "Travelogue"]
+tags: ["Travel"]
 draft: false
 ---
 

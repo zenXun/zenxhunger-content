@@ -4,7 +4,7 @@ description: "通过打牌盈利 100 万美金要多久？"
 pubDate: 2026-03-02
 status: "起"
 locale: "zh"
-tags: ["德州扑克", "Poker", "复盘", "观察"]
+tags: ["扑克"]
 series: "百万之路"
 draft: false
 ---

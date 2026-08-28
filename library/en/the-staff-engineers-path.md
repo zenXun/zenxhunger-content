@@ -5,7 +5,7 @@ alias: ["非线性成长"]
 pubDate: 2026-01-13
 status: "Flop"
 locale: "en"
-tags: ["engineering", "career", "notes"]
+tags: ["Engineering", "Career"]
 draft: true
 description: "Notes on The Staff Engineer's Path"
 ---

@@ -5,7 +5,7 @@ alias: ["六个说谎的大学生"]
 pubDate: 2026-02-01
 status: "承"
 locale: "zh"
-tags: ["推理小说","审判","读后感"]
+tags: ["人性"]
 draft: false
 description: "讨厌一个人有错吗？"
 ---

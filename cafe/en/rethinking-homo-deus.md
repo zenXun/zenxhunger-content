@@ -4,7 +4,7 @@ pubDate: 2026-03-16
 description: "Is Dataism a system upgrade or a formatting of Humanism?"
 status: "River"
 locale: "en"
-tags: ["AI", "Future"]
+tags: ["AI"]
 draft: false
 ---
 

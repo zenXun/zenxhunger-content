@@ -4,7 +4,7 @@ description: "Will AI become a purer lever?"
 pubDate: 2026-01-12
 status: "River"
 locale: "en"
-tags: ["Career", "Management", "AI", "Thinking"]
+tags: ["Career", "Management", "AI"]
 draft: false
 ---
 

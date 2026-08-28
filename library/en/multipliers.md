@@ -5,7 +5,7 @@ alias: ["倍增者"]
 pubDate: 2026-01-13
 status: "Flop"
 locale: "en"
-tags: ["management", "leadership", "notes"]
+tags: ["Management"]
 draft: true
 description: "Notes on Multipliers"
 ---

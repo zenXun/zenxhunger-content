@@ -5,7 +5,7 @@ alias: ["成就"]
 pubDate: 2026-01-13
 status: "Flop"
 locale: "en"
-tags: ["management", "career", "notes"]
+tags: ["Management", "Career"]
 draft: true
 description: "Notes on The Making of a Manager"
 ---

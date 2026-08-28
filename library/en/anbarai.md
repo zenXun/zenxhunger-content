@@ -5,7 +5,7 @@ alias: ["Dark Harassment"]
 pubDate: 2026-02-08
 status: "Flop"
 locale: "en"
-tags: ["Mystery Fiction","Interpersonal Relationships","Reflection"]
+tags: ["Human Nature"]
 draft: false
 description: "Who is the real monster?"
 ---

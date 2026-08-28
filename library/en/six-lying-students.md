@@ -5,7 +5,7 @@ alias: ["Six Lying College Students"]
 pubDate: 2026-02-01
 status: "Turn"
 locale: "en"
-tags: ["Detective Fiction","Judgment","Reflection"]
+tags: ["Human Nature"]
 draft: false
 description: "Is it wrong to dislike someone?"
 ---

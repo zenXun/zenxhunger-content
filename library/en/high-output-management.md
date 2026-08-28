@@ -5,7 +5,7 @@ alias: ["格鲁夫给经理人的第一课"]
 pubDate: 2026-01-13
 status: "Flop"
 locale: "en"
-tags: ["management", "notes"]
+tags: ["Management"]
 draft: true
 description: "Notes on High Output Management"
 ---

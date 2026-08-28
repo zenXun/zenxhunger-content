@@ -4,7 +4,7 @@ description: "How long does it take to make $1,000,000 playing poker?"
 pubDate: 2026-03-02
 status: "Flop"
 locale: "en"
-tags: ["Poker", "Texas Hold'em", "Analysis", "Observation"]
+tags: ["Poker"]
 series: "The Million Dollar Path"
 draft: false
 ---

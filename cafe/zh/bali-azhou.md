@@ -4,7 +4,7 @@ description: "改道火山，是老法师的加价话术，还是一场随性的
 pubDate: 2026-08-18
 status: "承"
 locale: "zh"
-tags: ["旅行", "巴厘岛", "游记"]
+tags: ["旅行"]
 draft: false
 ---
 

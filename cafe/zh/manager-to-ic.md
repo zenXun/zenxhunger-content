@@ -4,7 +4,7 @@ description: "AI 会成为更纯粹的杠杆吗？"
 pubDate: 2026-01-12
 status: "合"
 locale: "zh"
-tags: ["职业发展", "管理", "AI", "思考"]
+tags: ["职业", "管理", "AI"]
 draft: false
 ---
 

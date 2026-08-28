@@ -5,7 +5,7 @@ alias: ["暗祓"]
 pubDate: 2026-02-08
 status: "起"
 locale: "zh"
-tags: ["悬疑小说","人际关系","读后感"]
+tags: ["人性"]
 draft: false
 description: "谁才是真正的怪物？"
 ---

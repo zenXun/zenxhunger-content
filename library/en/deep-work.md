@@ -5,7 +5,7 @@ alias: ["深度工作"]
 pubDate: 2026-01-13
 status: "Flop"
 locale: "en"
-tags: ["productivity", "work", "notes"]
+tags: ["Learning"]
 draft: true
 description: "Notes on Deep Work"
 ---
