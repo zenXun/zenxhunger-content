@@ -1,6 +1,8 @@
 ---
 title: "The Collapsing Edifice: Rereading 'Homo Deus' in the Era of Reasoning AI"
 pubDate: 2026-03-16
+book_title: "Homo Deus"
+alias: ["未来简史"]
 description: "Is Dataism a system upgrade or a formatting of Humanism?"
 status: "River"
 locale: "en"

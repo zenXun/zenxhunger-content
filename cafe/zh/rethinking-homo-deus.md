@@ -1,6 +1,8 @@
 ---
 title: "大厦将倾：在推理 AI 时代重读「未来简史」"
 pubDate: 2026-03-16
+book_title: "未来简史"
+alias: ["Homo Deus"]
 description: "数据主义对于人文主义是一次系统升级还是格式化？"
 status: "合"
 locale: "zh"
