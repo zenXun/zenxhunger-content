@@ -15,8 +15,18 @@ const baseSchema = z.object({
   alias: z.array(z.string()).optional(),
   rating: z.number().min(1).max(5).optional(),
   series: z.string().optional(), // 系列名，同名文章在文章页互相链接
+  translationKey: z.string().min(1).optional(),
+  updatedDate: z.coerce.date().optional(),
+  revisionNote: z.string().optional(),
+  bookId: z.string().min(1).optional(),
+  seriesId: z.string().min(1).optional(),
+  seriesOrder: z.number().int().positive().optional(),
+  related: z.array(z.string().min(1)).optional(),
 }).superRefine((data, ctx) => {
-  const allowed = tagNames(data.locale);
+  if (data.updatedDate && data.updatedDate < data.pubDate) {
+    ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['updatedDate'], message: '修订日期不能早于发布日期' });
+  }
+  const allowed: readonly string[] = tagNames(data.locale);
   for (const tag of data.tags) {
     if (!allowed.includes(tag)) {
       ctx.addIssue({
