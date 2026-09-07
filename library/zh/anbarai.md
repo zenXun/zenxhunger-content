@@ -7,6 +7,8 @@ status: "起"
 locale: "zh"
 tags: ["人性"]
 related: ["library/six-lying-students", "cafe/manager-to-ic"]
+cover: ../_assets/anbarai/cover.jpg
+coverAlt: "《暗祓》（闇祓）日文版封面"
 draft: false
 description: "谁才是真正的怪物？"
 ---

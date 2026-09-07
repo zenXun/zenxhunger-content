@@ -6,6 +6,8 @@ status: "起"
 locale: "zh"
 tags: ["扑克"]
 series: "百万之路"
+cover: ../_assets/poker-chips/cover.jpg
+coverAlt: "牌桌上的筹码"
 draft: true
 ---
 

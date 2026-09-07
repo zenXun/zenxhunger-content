@@ -7,6 +7,8 @@ status: "Flop"
 locale: "en"
 tags: ["Human Nature"]
 related: ["library/six-lying-students", "cafe/manager-to-ic"]
+cover: ../_assets/anbarai/cover.jpg
+coverAlt: "Yami-hara (Japanese edition) cover"
 draft: false
 description: "Who is the real monster?"
 ---

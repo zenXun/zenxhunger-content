@@ -7,6 +7,8 @@ locale: "en"
 tags: ["Poker"]
 series: "The Million Dollar Path"
 related: ["cafe/bali-azhou", "library/six-lying-students"]
+cover: ../_assets/poker-chips/cover.jpg
+coverAlt: "Poker chips on the table"
 draft: false
 ---
 
