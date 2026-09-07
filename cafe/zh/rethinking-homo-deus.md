@@ -7,6 +7,7 @@ description: "数据主义对于人文主义是一次系统升级还是格式化
 status: "合"
 locale: "zh"
 tags: ["AI"]
+related: ["cafe/manager-to-ic"]
 draft: false
 ---
 

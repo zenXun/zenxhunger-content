@@ -5,6 +5,9 @@ pubDate: 2026-08-18
 status: "Turn"
 locale: "en"
 tags: ["Travel"]
+related: ["club/million-dollar-poker-challenge", "library/anbarai"]
+cover: ../_assets/bali-azhou/01-kintamani-volcano.jpg
+coverAlt: "Volcanoes from the Kintamani viewpoint"
 draft: false
 ---
 
@@ -24,7 +27,7 @@ We hit a stretch of rough road, and a piece of wood dangling from the rearview m
 
 Chatting, we arrived at the viewpoint. Two active volcanoes and one extinct one looked indistinguishable under the cloud cover; only the ash-gray grass on the slopes hinted at anything unusual. After a brief stop we headed for the temple, to experience a day in Ah Zhou's life. He swiped through family photos on his phone and laughed that his younger son had inherited his "sensitivity," while the elder had inherited his way with girls — back in primary school, a girl had actually come to the house to ask Ah Zhou's wife whether she could date her son. He handed over the phone; the lock screen showed a handsome, dark-skinned young man. Ah Zhou was not exaggerating.
 
-![Mount Batur from the Kintamani viewpoint](../_assets/bali-azhou/01-kintamani-volcano.jpg "Kintamani viewpoint: two active volcanoes and one extinct, indistinguishable under the clouds|wide")
+![Mount Batur from the Kintamani viewpoint](../_assets/bali-azhou/01-kintamani-volcano.jpg "Kintamani viewpoint: two active volcanoes and one extinct, indistinguishable under the clouds")
 
 ![A small temple to Chinese deities](../_assets/bali-azhou/02-chinese-temple.jpg "From Guan Gong and Guanyin down to the Earth God and the Tiger General, every deity shares one altar of incense|left")
 

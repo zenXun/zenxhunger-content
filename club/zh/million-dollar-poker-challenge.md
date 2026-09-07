@@ -6,6 +6,7 @@ status: "起"
 locale: "zh"
 tags: ["扑克"]
 series: "百万之路"
+related: ["cafe/bali-azhou", "library/six-lying-students"]
 draft: false
 ---
 

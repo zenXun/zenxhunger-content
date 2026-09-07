@@ -6,6 +6,7 @@ pubDate: 2026-02-08
 status: "起"
 locale: "zh"
 tags: ["人性"]
+related: ["library/six-lying-students", "cafe/manager-to-ic"]
 draft: false
 description: "谁才是真正的怪物？"
 ---

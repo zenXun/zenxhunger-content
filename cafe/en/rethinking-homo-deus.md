@@ -7,6 +7,7 @@ description: "Is Dataism a system upgrade or a formatting of Humanism?"
 status: "River"
 locale: "en"
 tags: ["AI"]
+related: ["cafe/manager-to-ic"]
 draft: false
 ---
 

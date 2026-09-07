@@ -6,6 +6,7 @@ pubDate: 2026-02-01
 status: "承"
 locale: "zh"
 tags: ["人性"]
+related: ["library/anbarai", "club/million-dollar-poker-challenge"]
 draft: false
 description: "讨厌一个人有错吗？"
 ---

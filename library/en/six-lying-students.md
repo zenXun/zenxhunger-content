@@ -6,6 +6,7 @@ pubDate: 2026-02-01
 status: "Turn"
 locale: "en"
 tags: ["Human Nature"]
+related: ["library/anbarai", "club/million-dollar-poker-challenge"]
 draft: false
 description: "Is it wrong to dislike someone?"
 ---

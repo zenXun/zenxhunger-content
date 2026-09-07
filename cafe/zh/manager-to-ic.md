@@ -5,6 +5,7 @@ pubDate: 2026-01-12
 status: "合"
 locale: "zh"
 tags: ["职业", "管理", "AI"]
+related: ["library/anbarai", "cafe/rethinking-homo-deus"]
 draft: false
 ---
 

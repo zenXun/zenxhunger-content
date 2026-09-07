@@ -5,6 +5,7 @@ pubDate: 2026-01-12
 status: "River"
 locale: "en"
 tags: ["Career", "Management", "AI"]
+related: ["library/anbarai", "cafe/rethinking-homo-deus"]
 draft: false
 ---
 

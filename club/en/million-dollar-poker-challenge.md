@@ -6,6 +6,7 @@ status: "Flop"
 locale: "en"
 tags: ["Poker"]
 series: "The Million Dollar Path"
+related: ["cafe/bali-azhou", "library/six-lying-students"]
 draft: false
 ---
 

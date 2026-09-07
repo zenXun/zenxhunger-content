@@ -6,6 +6,7 @@ pubDate: 2026-02-08
 status: "Flop"
 locale: "en"
 tags: ["Human Nature"]
+related: ["library/six-lying-students", "cafe/manager-to-ic"]
 draft: false
 description: "Who is the real monster?"
 ---

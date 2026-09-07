@@ -1,8 +1,8 @@
 import { defineCollection, z } from 'astro:content';
 import { tagNames } from './tags';
 
-// Shared schema for all collections
-const baseSchema = z.object({
+// Shared schema for all collections（image() 只能在 schema 函数里拿到）
+const baseSchema = ({ image }: { image: () => z.ZodTypeAny }) => z.object({
   title: z.string(),
   pubDate: z.coerce.date(),
   description: z.string(),
@@ -21,7 +21,9 @@ const baseSchema = z.object({
   bookId: z.string().min(1).optional(),
   seriesId: z.string().min(1).optional(),
   seriesOrder: z.number().int().positive().optional(),
-  related: z.array(z.string().min(1)).optional(),
+  related: z.array(z.string().min(1)).optional(), // 相关文章的 postKey（collection/slug）
+  cover: image().optional(), // 卡片/分享用的题图，相对路径指向 _assets
+  coverAlt: z.string().optional(),
 }).superRefine((data, ctx) => {
   if (data.updatedDate && data.updatedDate < data.pubDate) {
     ctx.addIssue({ code: z.ZodIssueCode.custom, path: ['updatedDate'], message: '修订日期不能早于发布日期' });
@@ -41,7 +43,7 @@ const baseSchema = z.object({
 // Studio collection - Learning notes, AI, Tech explorations (was AI)
 const studioCollection = defineCollection({
   type: 'content',
-  schema: baseSchema, // Schema definition for Studio collection
+  schema: baseSchema,
 });
 
 // Library collection - books, reflections, taste
