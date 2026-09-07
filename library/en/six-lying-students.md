@@ -7,6 +7,8 @@ status: "Turn"
 locale: "en"
 tags: ["Human Nature"]
 related: ["library/anbarai", "club/million-dollar-poker-challenge"]
+cover: ../_assets/six-lying-students/cover.jpg
+coverAlt: "Six Lying University Students (Japanese edition) cover"
 draft: false
 description: "Is it wrong to dislike someone?"
 ---

@@ -6,6 +6,8 @@ pubDate: 2026-01-13
 status: "Flop"
 locale: "en"
 tags: ["Management"]
+cover: ../_assets/high-output-management/cover.jpg
+coverAlt: "High Output Management cover"
 draft: true
 description: "Notes on High Output Management"
 ---

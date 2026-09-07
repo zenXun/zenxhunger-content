@@ -7,6 +7,8 @@ status: "承"
 locale: "zh"
 tags: ["人性"]
 related: ["library/anbarai", "club/million-dollar-poker-challenge"]
+cover: ../_assets/six-lying-students/cover.jpg
+coverAlt: "《六个说谎的大学生》日文版封面"
 draft: false
 description: "讨厌一个人有错吗？"
 ---

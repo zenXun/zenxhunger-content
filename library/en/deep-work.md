@@ -6,6 +6,8 @@ pubDate: 2026-01-13
 status: "Flop"
 locale: "en"
 tags: ["Learning"]
+cover: ../_assets/deep-work/cover.jpg
+coverAlt: "Deep Work cover"
 draft: true
 description: "Notes on Deep Work"
 ---

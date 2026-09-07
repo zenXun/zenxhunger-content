@@ -6,6 +6,8 @@ pubDate: 2026-01-13
 status: "Flop"
 locale: "en"
 tags: ["Engineering", "Career"]
+cover: ../_assets/the-staff-engineers-path/cover.jpg
+coverAlt: "The Staff Engineer's Path cover"
 draft: true
 description: "Notes on The Staff Engineer's Path"
 ---

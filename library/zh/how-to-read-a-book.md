@@ -6,6 +6,8 @@ pubDate: 2026-01-13
 status: "起"
 locale: "zh"
 tags: ["学习"]
+cover: ../_assets/how-to-read-a-book/cover.jpg
+coverAlt: "《如何阅读一本书》封面"
 draft: true
 description: "如何阅读一本书读书笔记"
 ---

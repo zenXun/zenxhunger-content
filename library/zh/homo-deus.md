@@ -6,6 +6,8 @@ pubDate: 2026-03-16
 status: "起"
 locale: "zh"
 tags: ["AI"]
+cover: ../_assets/homo-deus/cover.jpg
+coverAlt: "《未来简史》（Homo Deus）封面"
 draft: true
 description: "关于《未来简史》的读书笔记。"
 ---
