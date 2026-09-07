@@ -8,6 +8,8 @@ status: "合"
 locale: "zh"
 tags: ["AI"]
 related: ["cafe/manager-to-ic"]
+cover: ../../library/_assets/homo-deus/cover.jpg
+coverAlt: "《未来简史》（Homo Deus）封面"
 draft: false
 ---
 

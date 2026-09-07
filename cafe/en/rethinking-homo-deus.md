@@ -8,6 +8,8 @@ status: "River"
 locale: "en"
 tags: ["AI"]
 related: ["cafe/manager-to-ic"]
+cover: ../../library/_assets/homo-deus/cover.jpg
+coverAlt: "Homo Deus cover"
 draft: false
 ---
 
