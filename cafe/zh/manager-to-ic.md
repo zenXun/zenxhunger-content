@@ -6,6 +6,8 @@ status: "合"
 locale: "zh"
 tags: ["职业", "管理", "AI"]
 related: ["library/anbarai", "cafe/rethinking-homo-deus"]
+cover: ../_assets/manager-to-ic/cover.jpg
+coverAlt: "杠杆：支点滑向了独自一人的那一端"
 draft: false
 ---
 

@@ -8,8 +8,8 @@ status: "合"
 locale: "zh"
 tags: ["AI"]
 related: ["cafe/manager-to-ic"]
-cover: ../../library/_assets/homo-deus/cover.jpg
-coverAlt: "《未来简史》（Homo Deus）封面"
+cover: ../_assets/rethinking-homo-deus/cover.jpg
+coverAlt: "一座石柱，底层的方块正被发光的方块逐个替换，顶端站着一个人"
 draft: false
 ---
 

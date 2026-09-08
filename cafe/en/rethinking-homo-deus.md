@@ -8,8 +8,8 @@ status: "River"
 locale: "en"
 tags: ["AI"]
 related: ["cafe/manager-to-ic"]
-cover: ../../library/_assets/homo-deus/cover.jpg
-coverAlt: "Homo Deus cover"
+cover: ../_assets/rethinking-homo-deus/cover.jpg
+coverAlt: "A stone tower whose lowest blocks are being replaced by glowing ones, a lone figure standing on top"
 draft: false
 ---
 

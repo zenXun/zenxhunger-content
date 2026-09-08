@@ -6,6 +6,8 @@ status: "River"
 locale: "en"
 tags: ["Career", "Management", "AI"]
 related: ["library/anbarai", "cafe/rethinking-homo-deus"]
+cover: ../_assets/manager-to-ic/cover.jpg
+coverAlt: "A lever whose fulcrum has shifted toward the lone figure"
 draft: false
 ---
 
