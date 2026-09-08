@@ -7,8 +7,8 @@ locale: "zh"
 tags: ["扑克"]
 series: "百万之路"
 related: ["cafe/bali-azhou", "library/six-lying-students"]
-cover: ../_assets/poker-chips/cover.jpg
-coverAlt: "牌桌上的筹码"
+cover: ../_assets/million-dollar-poker-challenge/cover.jpg
+coverAlt: "一条由筹码铺成的路通向地平线，近处几枚筹码散落翻倒"
 draft: false
 ---
 
