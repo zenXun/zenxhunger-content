@@ -7,7 +7,7 @@ locale: "en"
 tags: ["Career", "Management", "AI"]
 related: ["library/anbarai", "cafe/rethinking-homo-deus"]
 cover: ../_assets/manager-to-ic/cover.jpg
-coverAlt: "A lever whose fulcrum has shifted toward the lone figure"
+coverAlt: "A level lever: six figures on the left, one on the right backed by a teal shadow of himself"
 draft: false
 ---
 

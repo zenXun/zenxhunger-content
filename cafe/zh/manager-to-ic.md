@@ -7,7 +7,7 @@ locale: "zh"
 tags: ["职业", "管理", "AI"]
 related: ["library/anbarai", "cafe/rethinking-homo-deus"]
 cover: ../_assets/manager-to-ic/cover.jpg
-coverAlt: "杠杆：支点滑向了独自一人的那一端"
+coverAlt: "一根水平的杠杆：左端六个人，右端一个人，他身后叠着一道青绿的影子"
 draft: false
 ---
 
