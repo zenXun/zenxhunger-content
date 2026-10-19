@@ -13,6 +13,7 @@ export const TAGS = [
   { zh: "旅行", en: "Travel" },
   { zh: "学习", en: "Learning" },
   { zh: "人性", en: "Human Nature" },
+  { zh: "财富", en: "Wealth" },
 ] as const;
 
 export type Locale = "zh" | "en";
