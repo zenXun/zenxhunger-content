@@ -16,7 +16,7 @@ draft: false
 
 You have probably heard the version of FIRE that circulates most widely online:
 
-> "Save up *X* million dollars, put it all into SPY (the S&P 500 index), and strictly follow the 4% safe withdrawal rule. With SPY's historical 7%–10% annualized return, the real growth after inflation covers your living expenses while the real purchasing power of your principal remains intact forever—granting you lifelong financial independence. (*X* simply depends on your target lifestyle.)"
+> Save up *X* million dollars, put it all into SPY (the S&P 500 index), and strictly follow the 4% safe withdrawal rule. With SPY's historical 7%–10% annualized return, the real growth after inflation covers your living expenses while the real purchasing power of your principal remains intact forever—granting you lifelong financial independence. (*X* simply depends on your target lifestyle.)
 
 The seduction of this narrative lies in its mathematical neatness and the clear, attainable hope it offers. Warren Buffett famously remarked that "nobody wants to get rich slow," and that buying a low-cost S&P 500 index fund is the best way for an ordinary person to build wealth. It makes every present sacrifice and act of frugality feel like another brick laid in the fortress of your future retirement—nothing wasted, delayed gratification guaranteed to compound into a higher form of freedom.
 
