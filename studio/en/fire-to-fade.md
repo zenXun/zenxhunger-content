@@ -64,19 +64,19 @@ Over the long run, SPY's return and the expansion of society's wealth pool run a
 
 Money, after all, is never just a number on a ledger; it is **a claim on other people's time and skill**.
 
-Take total U.S. household net worth as the benchmark. According to the Federal Reserve's [Z.1 Financial Accounts](https://www.federalreserve.gov/releases/z1/), it stood at about $196 trillion in Q2 2026; for easy mental math, I'll round it to $200 trillion. If you hold $1 million in net worth, you own roughly 5 parts per million (**5 PPM**) of the national wealth pool.
+Take total U.S. household net worth as the benchmark. According to the Federal Reserve's [Z.1 Financial Accounts](https://www.federalreserve.gov/releases/z1/), it stood at about $196 trillion in Q2 2026; for easy mental math, I'll round it to $200 trillion. If you hold $1 million in net worth, you own roughly 5 parts per billion (**5 PPB**) of the national wealth pool.
 
 Where does that ratio sit on the real-world spectrum of resource mobilization?
 
-> **Benchmark**: U.S. household net worth ≈ $200 trillion (≈ $196T as of Q2 2026) ｜ 1 PPM ≈ $200,000
+> **Benchmark**: U.S. household net worth ≈ $200 trillion (≈ $196T as of Q2 2026) ｜ 1 PPB ≈ $200,000
 
 | Tier | Net Worth & Share (U.S. Benchmark) | Capacity to Mobilize Social Resources |
 | --- | --- | --- |
-| **T1 · Survival Input Tier** | < $200K<br>(< 1 PPM) | **System inputs.** Unable to mobilize anyone else's specialized intellect. Life hours are locked into baseline labor, leaving one acutely vulnerable to external shocks like illness or job loss. |
-| **T2 · Decent Salaried Tier** | $500K – $1M<br>(2.5 – 5 PPM) | **Seasoned cogs.** Full access to scalable industrial abundance (electronics, cars, everyday dining). Yet non-replicable high-tier services (private education, core real estate, top-flight legal defense) still threaten to wipe out life savings. |
-| **T3 · Time-Sovereign Tier (FIRE)** | $3M – $5M<br>(15 – 25 PPM) | **Offline observers of the system.** Personal time sovereignty bought at the price of surrendering systemic leverage. Immune to everyday price tags, yet unable to retain dedicated specialist teams or outbid higher tiers during major medical crises or scarce-resource auctions. |
-| **T4 · Resource-Allocating Tier** | $13M – $25M<br>(65 – 125 PPM) | **Employers of specialized intellect.** Routinely retain bespoke white-collar teams (private counsel, wealth advisors, concierge medical teams) to execute their will, achieving full immunity against labor inflation. |
-| **T5 · System-Architect Tier** | ≥ $100M<br>(≥ 500 PPM) | **Chief architects of social productivity.** No longer merely consuming society, but compiling it. A single capital allocation can mobilize thousands of top engineers and scientists worldwide to attack a technological frontier and shape industrial trajectories for decades. |
+| **T1 · Survival Input Tier** | < $200K<br>(< 1 PPB) | **System inputs.** Unable to mobilize anyone else's specialized intellect. Life hours are locked into baseline labor, leaving one acutely vulnerable to external shocks like illness or job loss. |
+| **T2 · Decent Salaried Tier** | $500K – $1M<br>(2.5 – 5 PPB) | **Seasoned cogs.** Full access to scalable industrial abundance (electronics, cars, everyday dining). Yet non-replicable high-tier services (private education, core real estate, top-flight legal defense) still threaten to wipe out life savings. |
+| **T3 · Time-Sovereign Tier (FIRE)** | $3M – $5M<br>(15 – 25 PPB) | **Offline observers of the system.** Personal time sovereignty bought at the price of surrendering systemic leverage. Immune to everyday price tags, yet unable to retain dedicated specialist teams or outbid higher tiers during major medical crises or scarce-resource auctions. |
+| **T4 · Resource-Allocating Tier** | $13M – $25M<br>(65 – 125 PPB) | **Employers of specialized intellect.** Routinely retain bespoke white-collar teams (private counsel, wealth advisors, concierge medical teams) to execute their will, achieving full immunity against labor inflation. |
+| **T5 · System-Architect Tier** | ≥ $100M<br>(≥ 500 PPB) | **Chief architects of social productivity.** No longer merely consuming society, but compiling it. A single capital allocation can mobilize thousands of top engineers and scientists worldwide to attack a technological frontier and shape industrial trajectories for decades. |
 
 Once we unfurl this pyramid, the true nature of the two strategies becomes unmistakable:
 
@@ -103,13 +103,13 @@ On the other hand, once we clearly distinguish which parts of life (material com
 
 ---
 
-## Re-examining Three "Conventional" Financial Moves Through PPM
+## Re-examining Three "Conventional" Financial Moves Through PPB
 
-Once we shift our lens from *nominal dollars* to *Parts Per Million of societal wealth (PPM)*, several "prudent" practices canonized by conventional financial textbooks reveal a very different complexion.
+Once we shift our lens from *nominal dollars* to *Parts Per Billion of societal wealth (PPB)*, several "prudent" practices canonized by conventional financial textbooks reveal a very different complexion.
 
 To keep our derivation rigorous, let's lock in our single governing equation:
 
-> **Your PPM = Your Personal Net Worth ÷ Total U.S. Household Net Worth (currently ≈ $200 trillion)**
+> **Your PPB = Your Personal Net Worth ÷ Total U.S. Household Net Worth (currently ≈ $200 trillion) × 10⁹**
 
 Over the past several decades, fueled by monetary expansion and compounding technological productivity, the denominator (total U.S. household net worth) has grown at a long-term annualized rate of **6.5%–7%**. With that moving target in mind, let's examine three everyday financial decisions:
 
@@ -117,12 +117,12 @@ Over the past several decades, fueled by monetary expansion and compounding tech
 
 During high-interest-rate cycles, many people love parking large sums in high-yield savings accounts (HYSAs) or short-term Treasuries (like SGOV). Earning a risk-free 4.5%–5% while official CPI sits at 2.5% feels like a foolproof win.
 
-Under the PPM microscope, however, it is guaranteed shrinkage:
+Under the PPB microscope, however, it is guaranteed shrinkage:
 
 1. **Tax Drag**: As long as you don't sell an equity index, unrealized capital gains compound tax-deferred. Interest income, by contrast, is taxed every single year at your top marginal ordinary-income rate (for high earners in high-tax states, often 40%+ combined federal and state). A 4.5% nominal yield frequently leaves just **2.5%–2.8%** after tax.
 2. **Crushed by the Denominator**: While your numerator crawls forward at 2.6% a year, the $200 trillion denominator—propelled by equities and core real estate—is compounding ahead at roughly **7%**.
 
-Put differently, **holding cash long-term to clip interest is effectively shorting the progress of human productivity.** So long as society continues generating excess returns through technological innovation, anyone living purely off interest watches their PPM share evaporate by **roughly 4% a year**. You think you are preserving principal; in reality, you are quietly surrendering your seat at the auction table.
+Put differently, **holding cash long-term to clip interest is effectively shorting the progress of human productivity.** So long as society continues generating excess returns through technological innovation, anyone living purely off interest watches their PPB share evaporate by **roughly 4% a year**. You think you are preserving principal; in reality, you are quietly surrendering your seat at the auction table.
 
 ### 2. DCA vs. Lump-Sum Coasting: The "Piton Effect" of Fresh Capital
 
@@ -130,18 +130,18 @@ Returning to our earlier metaphor: if buying SPY is like hammering pitons into a
 
 The answer lies in **where the "new money" goes.**
 
-Strictly speaking, if at 35 you buy SPY worth 10 PPM of national wealth (about $2 million) and never touch it or add a dime, does your societal share stay constant forever? Not quite—it suffers from a subtle **passive leakage**. Capital markets constantly metabolize: public companies issue stock-based compensation (SBC) that dilutes existing shareholders every year, while the most explosive emerging unicorns (like early OpenAI or SpaceX) often compound to hundreds of billions in private-market valuation before finally being added to public indices at a premium. Relying solely on old capital to roll forward means your numerator trails the broader wealth pool by half a beat.
+Strictly speaking, if at 35 you buy SPY worth 10 PPB of national wealth (about $2 million) and never touch it or add a dime, does your societal share stay constant forever? Not quite—it suffers from a subtle **passive leakage**. Capital markets constantly metabolize: public companies issue stock-based compensation (SBC) that dilutes existing shareholders every year, while the most explosive emerging unicorns (like early OpenAI or SpaceX) often compound to hundreds of billions in private-market valuation before finally being added to public indices at a premium. Relying solely on old capital to roll forward means your numerator trails the broader wealth pool by half a beat.
 
 **The essence of continuous investing is using a steady stream of external "new money" to forcibly offset that dilution—and actually grow your share.**
 
 Whether that fresh capital comes from cashing out Silicon Valley equity grants or from the monthly savings of a salaried worker, the second it enters SPY, every dollar is mathematically equal: you are converting the *flow purchasing power* created by your current labor into *permanent equity ownership* of society's core productive assets.
 
 - **No withdrawals, no new contributions**: You are playing defense with old chips, barely holding your current tier against dilution.
-- **No withdrawals, continuously hammering new money in**: Not only do you lock in your original share, you forcibly expand your claim on society with every paycheck—10, 11, 12 PPM... For ordinary people, this is the only deterministic ladder up the purchasing-power pyramid.
+- **No withdrawals, continuously hammering new money in**: Not only do you lock in your original share, you forcibly expand your claim on society with every paycheck—10, 11, 12 PPB... For ordinary people, this is the only deterministic ladder up the purchasing-power pyramid.
 
 ### 3. Asset Diversification: Trading "Share Shrinkage" for Psychological Comfort
 
-Traditional wealth advisors love preaching the classic "60/40 stock-bond portfolio" or cross-asset diversification in the name of dampening volatility. Viewed from the first principles of PPM, however, we have to ask: **when your core holding is already SPY—a basket of 500 of the most profitable companies on earth—what does it actually mean to "diversify" into low-yielding bonds, cash, or defensive ballast?**
+Traditional wealth advisors love preaching the classic "60/40 stock-bond portfolio" or cross-asset diversification in the name of dampening volatility. Viewed from the first principles of PPB, however, we have to ask: **when your core holding is already SPY—a basket of 500 of the most profitable companies on earth—what does it actually mean to "diversify" into low-yielding bonds, cash, or defensive ballast?**
 
 It means you are **voluntarily diluting your own growth engine.**
 
@@ -152,12 +152,12 @@ Is diversification, then, completely useless? No—it serves exactly one real fu
 - **If you are still in your earning years (with steady new cash flow to invest)**: You have no need to hold bonds just to calm paper volatility. When the market plunges 30%, you aren't forced to sell shares to buy groceries; a market crash is simply society putting future equity ownership on sale for your incoming paycheck. Over-diversifying during your accumulation phase is self-sabotage.
 - **Only when you are fully retired (having severed active income while locked into a rigid 4% annual withdrawal)**: Deprived of the shield of external cash flow, and terrified that a 50% drawdown will force you to liquidate shares at the bottom (*sequence-of-returns risk*), you have no choice but to hold bonds and cash.
 
-The upshot: **conservative diversification is never a free lunch. It is a long-term *PPM shrinkage tax* that rentiers pay to insure against short-term ruin.**
+The upshot: **conservative diversification is never a free lunch. It is a long-term *PPB shrinkage tax* that rentiers pay to insure against short-term ruin.**
 
 ---
 
 ## Bonus: Calculate Your True Standing
 
-Because nearly every retirement calculator on the market lulls people to sleep with fiat illusions—"your portfolio will compound to $20 million in 30 years!"—I built **FIRE or FADE**, a simulator that measures real purchasing power through the lens of **relative wealth share (PPM) and Baumol's cost erosion**.
+Because nearly every retirement calculator on the market lulls people to sleep with fiat illusions—"your portfolio will compound to $20 million in 30 years!"—I built **FIRE or FADE**, a simulator that measures real purchasing power through the lens of **relative wealth share (PPB) and Baumol's cost erosion**.
 
 Open **[fireorfade.com](https://fireorfade.com)**, plug in your current principal, planned withdrawals, and macro wealth-expansion assumptions, and see for yourself whether, over the next 30 years, your portfolio is genuinely advancing—or executing a polite retreat.
