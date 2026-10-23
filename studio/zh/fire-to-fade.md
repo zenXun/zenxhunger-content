@@ -2,7 +2,7 @@
 title: "刻舟求剑：FIRE or FADE"
 description: "4% 安全提款法则的成本究竟是什么？"
 pubDate: 2026-10-18
-status: "承"
+status: "合"
 locale: "zh"
 tags: ["财富"]
 translationKey: "studio/fire-to-fade"

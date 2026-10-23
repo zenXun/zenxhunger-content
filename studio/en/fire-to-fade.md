@@ -2,7 +2,7 @@
 title: "Marking the Boat: FIRE or FADE"
 description: "In an old Chinese fable, a man drops his sword from a moving boat and marks the spot on its side. Measuring wealth in fixed dollars makes the same mistake: the boat keeps moving."
 pubDate: 2026-10-18
-status: "Turn"
+status: "River"
 locale: "en"
 tags: ["Wealth"]
 translationKey: "studio/fire-to-fade"
