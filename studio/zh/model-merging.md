@@ -22,9 +22,7 @@ draft: true
 | **蒸馏（Distillation）** | 让小模型模仿大模型的输出分布 | **可跨尺寸/架构** | 适合压缩延迟和定价；例如 Hydrogen 定价是 Neon 的一半，若两者参数规模不同，就只能走蒸馏或裁剪 |
 | **权重合并（Model Merging）** | 不重新训练，直接对多个微调权重做平均或加减 | **必须同架构、同一预训练初始化** | 合并本身几乎零算力、推理成本不变；Meta 在 Llama 3 论文 §4.1.5 已明牌在 RM / SFT / DPO 各阶段使用权重平均 |
 
-![从一个底座派生多个模型的权重合并全景](../_assets/model-merging/base-to-models.png "从同一个预训练底座出发，经 Model Soups、Task Arithmetic 到 TIES-Merging 的演化路线|full")
-
-如果你还没看过权重合并这条路线的直觉演示，可以先看我做的这支 11 分钟动画视频，串讲了 **Model Soups**、**Task Arithmetic** 和 **TIES-Merging** 三篇奠基论文：
+如果你还没有看过权重合并这条路线的相关论文，可以先看我做的这支 11 分钟动画视频，快速形成直觉——它串讲了 **Model Soups**、**Task Arithmetic** 和 **TIES-Merging** 三篇奠基论文：
 
 [![平均不等于平庸：11 分钟看懂 Model Soups、Task Arithmetic 与 TIES-Merging](../_assets/model-merging/video-cover.png "11 分钟动画串讲三篇模型合并核心论文（点击直接播放）")](https://youtu.be/9MecCo2YQ3w)
 [B 站同步版](https://www.bilibili.com/video/BV1FWynzWEpp)
@@ -42,7 +40,7 @@ Task Arithmetic 原论文测出不同任务的向量余弦相似度接近 0，�
 Ortiz-Jimenez 等人在 NeurIPS 2023 Oral 论文 [*Task Arithmetic in the Tangent Space*](https://arxiv.org/abs/2305.12827) 里，分两步拆解了真正的原因：
 
 1. **真正起作用的是“权重解耦（weight disentanglement）”**：与其只看参数向量夹角，不如拉回“输入 → 输出”的函数空间看。对一个经过大规模预训练的模型，顺着任务 A（比如识别汽车）的参数方向移动权重时，模型的输出只在“输入是汽车”的区域发生变化，在“输入是动物”的区域几乎不动；反之亦然。也就是说，预训练让不同的参数方向分别管着不同的输入领地，彼此不越界，这才是任务向量能直接相加而不打架的真正前提。
-2. **为什么论文标题叫“切空间（Tangent Space）”**：此前大家默认常规微调步子小，已经近似在线性区了。但作者实测发现并非如此——常规微调依然存在明显的非线性漂移，会削弱上面那种“各管一摊”的解耦性质。如果显式地把模型在预训练权重附近做线性化（在所谓切空间里微调），权重解耦会被显著放大，任务加减法的准确率也跟着明显提升。
+2. **为什么论文提出“切空间微调（Tangent Space）”**：此前大家默认常规微调步子小，模型行为已经近似线性了。但作者实测发现并非如此——常规微调依然带有明显的非线性漂移，会削弱“各管一摊”的解耦性质。于是作者提出改一改**微调方式**（而不是改合并公式）：把非线性神经网络在预训练起点 `θ₀` 附近做一阶泰勒展开（就像用起点处的切线去近似一条曲线），微调时强制只训练这个线性化的切线模型。因为模型输出对权重改动 `θ - θ₀` 变成了严格线性关系，后续把多个任务向量直接相加时，权重解耦显著增强，Task Arithmetic 的准确率也跟着明显提升。
 
 ### 2. 放到大模型尺度上，这些精巧方法还拉得开差距吗？
 
@@ -56,7 +54,7 @@ TIES-Merging 之后，Yu 等人在 ICML 2024 提出了 [**DARE**（*Language Mod
 
 ## 本地实测：在 M2 16GB 上亲手合并两个任务
 
-光读论文总归隔着一层纸。为了亲手验证“按公式手写合并”和工业工具 `mergekit` 在小模型上的真实表现，我在自己的 M2 MacBook（16GB 内存）上搭了一套最小实验（代码放在 [GitHub 仓库 `ai_research/02_model_merging`](https://github.com/zenXun/ai_research/tree/main/02_model_merging)，微调跑在 PyTorch MPS 上，合并公式用 JAX 的 PyTree 逐行手写，再用 `mergekit` 对账）。
+光读论文总归隔着一层纸。为了亲手验证按公式直接实现的合并与工业工具 `mergekit` 在小模型上的真实表现，我在自己的 M2 MacBook（16GB 内存）上搭了一套最小实验（代码放在 [GitHub 仓库 `ai_research/02_model_merging`](https://github.com/zenXun/ai_research/tree/main/02_model_merging)，微调跑在 PyTorch MPS 上，合并公式用 JAX 实现，再用 `mergekit` 对账）。
 
 先交代实测范围与边界：这次实验直接验证了四篇论文的核心断言——**Model Soups**（直接平均）、**Task Arithmetic**（任务向量余弦相似度与缩放）、**TIES-Merging**（修剪投票能否救回掉分）和 **DARE**（随机丢弃 0%→99% 曲线）；至于上节提到的 **Tangent Space 显式线性化微调** 和 **7B+ 大尺度横向对比**，受限于 16GB 本地算力，本文只做论文梳理，不在本机复现。
 
@@ -71,12 +69,12 @@ TIES-Merging 之后，Yu 等人在 ICML 2024 提出了 [**DARE**（*Language Mod
 | 预训练底座（无微调） | 50.4% | 44.8% | 47.6% | SST-2 抽查 200 条里 199 条全答 negative |
 | 单任务微调 · SST-2 | 90.8% | 67.4% | 79.1% | 专精情感 |
 | 单任务微调 · AG News | 88.0% | **92.4%** | 90.2% | 输出格式对齐顺手解锁了底座原有的情感能力 |
-| Linear 平均（`alpha = 0.5`，手写 JAX） | 91.6% | 88.4% | 90.0% | SST-2 反而超过单任务最强（+0.8%），AG News 掉 4.0% |
-| Linear 平均（`mergekit` 对账） | 91.6% | 88.4% | 90.0% | 与手写 JAX 完全一致 |
-| **Task Arithmetic（`lam = 1.0`，手写 JAX）** | 91.2% | 91.8% | **91.5%** | **全场最高均分**：两边同时逼近或超过单任务天花板 |
-| TIES-Merging（`density = 0.2, lam = 0.7`，手写 JAX） | **92.4%** | 89.0% | 90.7% | SST-2 全场最高（+1.6%），但均分略输简单相加 |
+| Linear 平均（`alpha = 0.5`，JAX 实现） | 91.6% | 88.4% | 90.0% | SST-2 反而超过单任务最强（+0.8%），AG News 掉 4.0% |
+| Linear 平均（`mergekit` 对账） | 91.6% | 88.4% | 90.0% | 与公式实现完全一致 |
+| **Task Arithmetic（`lam = 1.0`，JAX 实现）** | 91.2% | 91.8% | **91.5%** | **全场最高均分**：两边同时逼近或超过单任务天花板 |
+| TIES-Merging（`density = 0.2, lam = 0.7`，JAX 实现） | **92.4%** | 89.0% | 90.7% | SST-2 全场最高（+1.6%），但均分略输简单相加 |
 | TIES-Merging（`mergekit` 对账） | **92.4%** | 88.6% | 90.5% | SST-2 一字不差，AG News 差 2 条样本（0.4%） |
-| DARE（`drop = 0.99, lam = 0.5`，手写 JAX） | 91.4% | 88.6% | 90.0% | 随机清零 99% 改动、剩下放大 100 倍，均分纹丝不动 |
+| DARE（`drop = 0.99, lam = 0.5`，JAX 实现） | 91.4% | 88.6% | 90.0% | 随机清零 99% 改动、剩下放大 100 倍，均分纹丝不动 |
 
 ![SmolLM2-360M 本地实测对账与 DARE 丢弃曲线](../_assets/model-merging/local-results.png "SmolLM2-360M 两任务合并实测对比与 DARE 0%→99% 随机丢弃率扫描（2026-11-22，M2 16GB）|full|natural")
 
