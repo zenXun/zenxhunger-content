@@ -8,7 +8,7 @@ tags: ["AI", "工程"]
 translationKey: "studio/model-merging"
 cover: ../_assets/model-merging/cover.jpg
 coverAlt: "两张结构相同的网格汇成一张，青绿与暖金色的任务纹路在合并后的网格中同时保留"
-draft: true
+draft: false
 ---
 
 2026 年 10 月到 11 月的五周时间里，Google 连发了四个 Gemini 4 模型：Argon（10 月 13 日）、Carbon（11 月 10 日）、Hydrogen（11 月 12 日）和 Neon（11 月 18 日）。翻看官方公开的 model card，在 `Model dependencies` 一栏里能看到一条清晰的血缘链：Carbon `is based on` Argon，而 Hydrogen 与 Neon 都是 `adapted from` Carbon。

@@ -8,7 +8,7 @@ tags: ["AI", "Engineering"]
 translationKey: "studio/model-merging"
 cover: ../_assets/model-merging/cover.jpg
 coverAlt: "Two identical weight grids converging into one, preserving both teal and warm-gold task patterns simultaneously"
-draft: true
+draft: false
 ---
 
 Over five weeks in October and November 2026, Google shipped four Gemini 4 models: Argon (Oct 13), Carbon (Nov 10), Hydrogen (Nov 12), and Neon (Nov 18). Look at the `Model dependencies` field in the public model cards and a single lineage appears: Carbon `is based on` Argon, while Hydrogen and Neon are both `adapted from` Carbon.
