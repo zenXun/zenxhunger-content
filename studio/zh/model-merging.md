@@ -28,7 +28,7 @@ draft: false
 如果你还没有看过权重合并这条路线的相关论文，可以先看我做的这支 11 分钟动画视频，快速形成直觉——它串讲了 **Model Soups**、**Task Arithmetic** 和 **TIES-Merging** 三篇奠基论文：
 
 [![平均不等于平庸：11 分钟看懂 Model Soups、Task Arithmetic 与 TIES-Merging](../_assets/model-merging/video-cover.png "11 分钟动画串讲三篇模型合并核心论文（点击直接播放）")](https://youtu.be/9MecCo2YQ3w)
-[B 站同步版](https://www.bilibili.com/video/BV1FWynzWEpp)
+[B 站同步版](https://www.bilibili.com/video/BV1FWynzWEpp/?t=0)
 
 下面不再重复视频里讲过的动画直觉，直接聊两件视频因为篇幅砍掉的事：**2023 年之后的深水区进展**，以及**我在本地 M2 机器上亲手合并模型的实测**。
 

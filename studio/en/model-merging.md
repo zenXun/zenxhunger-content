@@ -28,7 +28,7 @@ Post-training adaptation generally falls into three buckets, each under differen
 If you have not read the foundational papers on model merging, you can start with my 11-minute animated walkthrough (in Mandarin) to build intuition—it traces **Model Soups**, **Task Arithmetic**, and **TIES-Merging**:
 
 [![Model Merging 11-minute animated walkthrough covering Model Soups, Task Arithmetic, and TIES-Merging](../_assets/model-merging/video-cover.png "11-minute animated walkthrough of three foundational model-merging papers (Mandarin · click to play)")](https://youtu.be/9MecCo2YQ3w)
-[Bilibili mirror](https://www.bilibili.com/video/BV1FWynzWEpp)
+[Bilibili mirror](https://www.bilibili.com/video/BV1FWynzWEpp/?t=0)
 
 Rather than repeating the video, this post focuses on two things the 11-minute format had to cut: **what happened in the research after 2023**, and **what I actually saw when merging two models on a 16GB M2 MacBook**.
 
