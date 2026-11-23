@@ -12,7 +12,7 @@ draft: true
 
 2026 年 10 月到 11 月的五周时间里，Google 连发了四个 Gemini 4 模型：Argon（10 月 13 日）、Carbon（11 月 10 日）、Hydrogen（11 月 12 日）和 Neon（11 月 18 日）。翻看官方公开的 model card，在 `Model dependencies` 一栏里能看到一条清晰的血缘链：Carbon `is based on` Argon，而 Hydrogen 与 Neon 都是 `adapted from` Carbon。
 
-官方没有公开“adapted from”具体用了哪一种技术——所以我们不能、也不该猜测 Google 靠某一种特定算法发得快。但这条公开的派生链提出了一个非常实际的工程问题：**当你手里已经有一个昂贵的预训练底座时，想快速派生出多个不同定位的模型，工程工具箱里到底有哪些牌？**
+官方没有公开“adapted from”具体用了哪一种技术，所以没法从外部判断 Google 内部到底用了哪套做法。但这条公开的派生链提出了一个非常实际的工程问题：**当你手里已经有一个昂贵的预训练底座时，想快速派生出多个不同定位的模型，工程工具箱里到底有哪些牌？**
 
 ## 从一个底座派生模型的三条路
 
@@ -26,7 +26,7 @@ draft: true
 
 ![从一个底座派生多个模型的权重合并全景](../_assets/model-merging/base-to-models.png "从同一个预训练底座出发，经 Model Soups、Task Arithmetic 到 TIES-Merging 的演化路线|full")
 
-如果你还没看过这三条技术线的直觉演示，可以先看我做的这支 11 分钟动画视频，串讲了 **Model Soups**、**Task Arithmetic** 和 **TIES-Merging** 三篇奠基论文：
+如果你还没看过权重合并这条路线的直觉演示，可以先看我做的这支 11 分钟动画视频，串讲了 **Model Soups**、**Task Arithmetic** 和 **TIES-Merging** 三篇奠基论文：
 
 [![平均不等于平庸：11 分钟看懂 Model Soups、Task Arithmetic 与 TIES-Merging](../_assets/model-merging/video-cover.png "11 分钟动画串讲三篇模型合并核心论文（点击直接播放）")](https://youtu.be/9MecCo2YQ3w)
 [B 站同步版（待发布后补链接）](https://www.bilibili.com/)
@@ -41,17 +41,17 @@ draft: true
 
 Task Arithmetic 原论文用余弦相似度接近 0 来解释不同任务向量互不干扰。但仔细想会发现这个解释并不够硬——在几十亿维空间里，随便抽两个随机向量本来就近似正交，这并不足以保证把它们加回非线性神经网络后，特征表示不会互相打架。
 
-Ortiz-Jimenez 等人在 NeurIPS 2023 的 *Task Arithmetic in the Tangent Space* 给出了更扎实的视角：把预训练模型放在微调点附近做一阶线性化（NTK / 切空间），他们发现**权重解耦（weight disentanglement）**才是任务算术成立的关键——不同任务激活的其实是网络中近似分离的子区域；而且当微调本身被约束在切空间里时，任务算术的效果还会进一步提升。
+Ortiz-Jimenez 等人在 NeurIPS 2023 的 *Task Arithmetic in the Tangent Space* 给出了更扎实的视角：真正的原因是**“各管一摊”**（论文叫权重解耦，weight disentanglement）。经过大规模预训练的模型，遇到汽车图片时调用的是网络里负责汽车的那一片反应区域，遇到动物图片时调用的是另一片区域——**两个任务在被输入触发时本来就不抢地盘**，所以把它们的参数改动加回同一个模型，彼此才不会互相破坏。只要微调步子迈得不大、模型行为离底座不远，这种“各管一摊”的性质就能保持得很好。
 
 ### 2. 放到大模型尺度上，这些精巧方法还拉得开差距吗？
 
-TIES-Merging 之后，Yu 等人（2024）提出了 **DARE**（Drop And REscale）：极其反直觉地随机把 90% 甚至 99% 的微调参数增量直接丢掉，只把剩下的按比例放大，合并效果居然几乎不掉分——这从侧面印证了微调增量的冗余度高得惊人。
+TIES-Merging 之后，Yu 等人（2024）提出了 **DARE**（Drop And REscale）：极其反直觉地随机把 90% 甚至 99% 的微调参数改动量（也就是微调后权重减去底座权重的差值）直接归零丢掉，只把剩下的按比例放大，合并效果居然几乎不掉分——这从侧面印证了微调改动里的冗余度高得惊人。
 
 但更值得看的是一篇 Google 参与的实证论文：Yadav 等人（2024）的 *What Matters for Model Merging at Scale?*（arXiv:2410.03617）。它直接把 Model Soups、Task Arithmetic、TIES 等方法拉到了大语言模型尺度上做横向评测。核心工程结论很清醒：**底座越强、规模越大，模型合并本身越容易成立，但各种复杂合并算法之间的差距反而会缩小。** 也就是说，在实际工程里，选对同一个强底座、管好微调超参，往往比死磕合并公式的细枝末节更重要。
 
 ## 本地实测：在 M2 16GB 上亲手合并两个任务
 
-光读论文总归隔着一层纸。为了验证“按公式手写合并”和成熟工具 `mergekit` 在小模型上的真实表现，我在自己的 M2 MacBook（16GB 内存）上搭了一套最小实验（代码在 `ai_research/02_model_merging`）：
+光读论文总归隔着一层纸。为了验证“按公式手写合并”和成熟工具 `mergekit` 在小模型上的真实表现，我在自己的 M2 MacBook（16GB 内存）上搭了一套最小实验（代码放在 [GitHub 仓库 `ai_research/02_model_merging`](https://github.com/zenXun/ai_research/tree/main/02_model_merging)）：
 
 - **底座**：`HuggingFaceTB/SmolLM2-360M-Instruct`（3.62 亿参数，Apache-2.0）
 - **两个任务**：`stanfordnlp/sst2`（情感二分类）与 `fancyzhx/ag_news`（新闻四分类），各取 500 条做评估
