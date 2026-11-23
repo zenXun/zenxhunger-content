@@ -5,6 +5,8 @@ pubDate: 2026-11-23
 status: "起"
 locale: "zh"
 tags: ["AI", "工程"]
+cover: ../_assets/model-merging/cover.jpg
+coverAlt: "两张结构相同的网格汇成一张，青绿与暖金色的任务纹路在合并后的网格中同时保留"
 draft: true
 ---
 
