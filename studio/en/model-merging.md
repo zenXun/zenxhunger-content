@@ -57,7 +57,7 @@ Even more worth reading is [*What Matters for Model Merging at Scale?*](https://
 
 ## Local Experiment: Merging Two Tasks on a 16GB M2 MacBook
 
-Reading papers only gets you so far. To check how the equations behave on a real small model—and cross-check against `mergekit`—I ran a minimal experiment on my 16GB M2 MacBook (code in [`ai-paper-learning/02_model_merging`](https://github.com/zenXun/ai-paper-learning/tree/main/02_model_merging): fine-tuning in PyTorch on MPS, merge equations implemented in JAX, cross-checked with `mergekit`).
+Reading papers only gets you so far. To check how the equations behave on a real small model—and cross-check against `mergekit`—I ran a minimal experiment on my 16GB M2 MacBook (code in [`ai-paper-learning/02_model_merging`](https://github.com/zenxhunger/ai-paper-learning/tree/main/02_model_merging): fine-tuning in PyTorch on MPS, merge equations implemented in JAX, cross-checked with `mergekit`).
 
 Scope and boundaries up front: this experiment tests four merging methods locally—**cross-task linear averaging** (the baseline in multi-task merging papers; strictly speaking, Model Soups averages multiple runs on the *same* task), **Task Arithmetic**, **TIES-Merging**, and **DARE**. Explicit **tangent-space linearized fine-tuning** and **7B+ scaling comparisons** are beyond 16GB local compute and remain literature notes only.
 

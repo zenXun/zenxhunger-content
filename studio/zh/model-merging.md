@@ -57,7 +57,7 @@ TIES-Merging 之后，Yu 等人在 ICML 2024 提出了 [**DARE**（*Language Mod
 
 ## 本地实测：在 M2 16GB 上亲手合并两个任务
 
-光读论文总归隔着一层纸。为了亲手验证按公式直接实现的合并与工业工具 `mergekit` 在小模型上的真实表现，我在自己的 M2 MacBook（16GB 内存）上搭了一套最小实验（代码放在 [GitHub 仓库 `ai-paper-learning/02_model_merging`](https://github.com/zenXun/ai-paper-learning/tree/main/02_model_merging)，微调跑在 PyTorch MPS 上，合并公式用 JAX 实现，再用 `mergekit` 对账）。
+光读论文总归隔着一层纸。为了亲手验证按公式直接实现的合并与工业工具 `mergekit` 在小模型上的真实表现，我在自己的 M2 MacBook（16GB 内存）上搭了一套最小实验（代码放在 [GitHub 仓库 `ai-paper-learning/02_model_merging`](https://github.com/zenxhunger/ai-paper-learning/tree/main/02_model_merging)，微调跑在 PyTorch MPS 上，合并公式用 JAX 实现，再用 `mergekit` 对账）。
 
 先交代实测范围与边界：这次实验在本地试了四种合并方法——**跨任务线性平均**（多任务合并论文里的基础基线；注意严格来说 Model Soups 平均的是同一任务不同超参的多次微调）、**Task Arithmetic**、**TIES-Merging** 和 **DARE**；至于上节提到的 **Tangent Space 显式线性化微调** 和 **7B+ 大尺度横向对比**，受限于 16GB 本地算力，本文只做论文梳理，不在本机复现。
 
