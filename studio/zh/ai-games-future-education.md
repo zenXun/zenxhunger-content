@@ -98,7 +98,7 @@ GPT-6 的回复只有三句话：它会先看项目，然后实现，然后"测�
 
 ## 复现
 
-- 游戏合集源码与在线试玩：[zenxhunger/ethvans-game](https://github.com/zenxhunger/ethvans-game) · [在线试玩合集（Ethvan's Game）](https://zenxhunger.github.io/ethvans-game/)（包含 9 月 Orbit 本机版与 11 月 Foodland 完整版；Orbit 完整 2–15 人联机版可在 `orbit/` 下 `npm run dev` 本地运行）
+- 游戏合集源码与在线试玩：[zenxhunger/ethvans-game](https://github.com/zenxhunger/ethvans-game) · [在线试玩合集（Ethvan's Game）](https://zenxhunger.github.io/ethvans-game/)（包含 9 月 Orbit 终版 11 房间大迷宫 + Solo 机器人试玩 + 联机，以及 11 月 Foodland 完整版；9 月最早一轮单屏小地图版保留在 `/orbit/local.html`）
 - 技术栈：原生 JavaScript + Vite，Node Worker，D1 数据库；托管在 ChatGPT 的 Sites 上
 - 工具：GPT-6，通过 Codex 对话；全程没有手写代码
 - 时间：2026-09-06，09:46–17:48，24 次提交，39 个测试
