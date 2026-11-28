@@ -1,13 +1,18 @@
 ---
-title: "一日成局：和外甥用 GPT-6 做一个太空狼人杀"
-description: "八小时、二十四次提交、四次翻车，AI 编程的边界在哪里？"
-pubDate: 2026-09-08
+title: "从和外甥用 AI 做游戏看未来的教育"
+description: "两次带外甥用 AI 开发游戏：从翻拍太空狼人杀到原创 Foodland，AI 时代孩子真正需要学什么？"
+pubDate: 2026-11-27
 status: "起"
 locale: "zh"
-tags: ["AI", "工程"]
+tags: ["AI", "学习"]
+seriesId: "future-education"
+series: "教育"
+seriesOrder: 1
+translationKey: "studio/ai-games-future-education"
 draft: true
 ---
 
+<!-- 2026-11-27 合并说明：本稿原为 orbit-with-gpt6.md（9 月 GPT-6/Codex 太空狼人杀草稿），现合并为「教育」系列第一篇，将结合 11 月底 Gemini/Antigravity《Foodland》经历与 Zen 的 brain dump 重写结构；下方完整保留 9 月原稿备取材。定稿时需补四字统领词标题与封面。 -->
 <!-- 待补：[方括号] 里是只有你知道的事实；截图建议见文末。 -->
 
 2026 年 9 月 6 日上午九点四十六分，第一次提交。下午五点四十八分，第二十四次，也是最后一次。中间这八小时零两分钟里，我的外甥 Ethan 提需求，GPT-6 写代码，我负责转述、测试和刷新页面。到晚饭时，一个能让十五个人用手机和电脑混合联机的太空狼人杀已经挂在网上，有迷宫地图、三种特殊身份和三十秒投票倒计时。
